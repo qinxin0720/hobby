@@ -1,7 +1,7 @@
 [Workspace Header]
-Version = 1501
-Pathname Line0001 = "/e/工作/南京博泰检测/导通电阻测试/导通电阻测试软件/ResEvaluationSystem0729/ResEv"
-Pathname Line0002 = "aluationSystem.cws"
+Version = 1500
+Pathname Line0001 = "/e/工作/broadtest/导通电阻测试/导通电阻测试软件/ResEvaluationSystem0729/ResEvalu"
+Pathname Line0002 = "ationSystem.cws"
 CVI Dir = "/d/program files (x86)/national instruments/cvi2015"
 CVI Shared Dir = "/D/Program Files (x86)/National Instruments/Shared/CVI"
 CVI Pub Local Dir = "/C/ProgramData/National Instruments/CVI2015"
@@ -14,11 +14,11 @@ Number of Projects = 1
 Active Project = 1
 Project 0001 = "ResEvaluationSystem.prj"
 Drag Bar Left = 160
-Window Top = 80
+Window Top = 31
 Window Left = 26
-Window Bottom = 582
+Window Bottom = 533
 Window Right = 816
-Maximized = True
+Maximized = False
 Maximized Children = True
 Max32 Number Of Errors = 20
 Track Include File Dependencies = True
@@ -31,14 +31,14 @@ Save Changes Before Compiling = "Always"
 Hide Windows = False
 Break At First Statement = False
 Sort Type = "File Name"
-Number of Opened Files = 6
+Number of Opened Files = 9
 Window Confinement Region Enabled = True
 MainColumnWidth = 143
 FileDateColumnWidth = 70
 FileSizeColumnWidth = 70
 
 [Project Header 0001]
-Version = 1501
+Version = 1500
 Don't Update DistKit = False
 Platform Code = 4
 Build Configuration = "Debug"
@@ -47,54 +47,32 @@ Batch Build Release = False
 Batch Build Debug = False
 
 [File 0001]
-Path Line0001 = "/e/工作/南京博泰检测/导通电阻测试/导通电阻测试软件/ResEvaluationSystem0729/FileI"
-Path Line0002 = "O.c"
+Path = "/e/工作/broadtest/导通电阻测试/导通电阻测试软件/ResEvaluationSystem0729/Main.c"
 File Type = "CSource"
-Disk Date = 3552627015
+Disk Date = 3552601530
 In Projects = "1,"
 Window Top = 33
 Window Left = 10
-Window Z-Order = 1
-Source Window State = "1,674,676,674,16,136,16,0,0,171,0,158,0,158,0,37,751,2,768,127,491,855,1,0,"
+Window Z-Order = 2
+Source Window State = "1,87,87,87,16,90,90,0,0,80,0,7,0,7,0,25,63,0,72,88,531,855,1,0,"
 
 [File 0002]
-Path Line0001 = "/e/工作/南京博泰检测/导通电阻测试/导通电阻测试软件/ResEvaluationSystem0729/Main."
-Path Line0002 = "c"
-File Type = "CSource"
-Disk Date = 3552626755
+Path Line0001 = "/e/工作/broadtest/导通电阻测试/导通电阻测试软件/ResEvaluationSystem0729/MainPane"
+Path Line0002 = "l.uir"
+File Type = "User Interface Resource"
+Disk Date = 3552601028
 In Projects = "1,"
-Window Top = 33
-Window Left = 10
-Window Z-Order = 3
-Source Window State = "1,219,219,219,16,25,25,0,0,80,0,7,0,7,0,25,188,0,200,38,531,855,1,0,"
+Window Top = 64
+Window Left = 26
+Window Height = 531
+Window Width = 855
+Window Z-Order = 1
 
 [File 0003]
-Path Line0001 = "/e/工作/南京博泰检测/导通电阻测试/导通电阻测试软件/ResEvaluationSystem0729/Macro"
-Path Line0002 = "Define.h"
-File Type = "Include"
-Disk Date = 3552626160
-In Projects = "1,"
-Window Top = 95
-Window Left = 42
-Window Z-Order = 5
-Source Window State = "1,6,6,6,11,21,21,0,0,80,0,0,0,0,0,23,0,0,7,25,491,855,1,0,"
-
-[File 0004]
-Path Line0001 = "/e/工作/南京博泰检测/导通电阻测试/导通电阻测试软件/ResEvaluationSystem0729/MainP"
-Path Line0002 = "anel.h"
-File Type = "Include"
-Disk Date = 3552626121
-In Projects = "1,"
-Window Top = 219
-Window Left = 106
-Window Z-Order = 6
-Source Window State = "1,70,70,70,9,33,33,0,0,80,0,0,0,0,0,25,42,0,67,28,531,855,1,0,"
-
-[File 0005]
-Path Line0001 = "/e/工作/南京博泰检测/导通电阻测试/导通电阻测试软件/ResEvaluationSystem0729/Login"
-Path Line0002 = "Panel.uir"
+Path Line0001 = "/e/工作/broadtest/导通电阻测试/导通电阻测试软件/ResEvaluationSystem0729/LoginPan"
+Path Line0002 = "el.uir"
 File Type = "User Interface Resource"
-Disk Date = 3552617104
+Disk Date = 3552601459
 In Projects = "1,"
 Window Top = 33
 Window Left = 10
@@ -102,75 +80,102 @@ Window Height = 531
 Window Width = 855
 Window Z-Order = 4
 
-[File 0006]
-Path Line0001 = "/e/工作/南京博泰检测/导通电阻测试/导通电阻测试软件/ResEvaluationSystem0729/MainP"
-Path Line0002 = "anel.uir"
-File Type = "User Interface Resource"
-Disk Date = 3552627053
+[File 0004]
+Path Line0001 = "/e/工作/broadtest/导通电阻测试/导通电阻测试软件/ResEvaluationSystem0729/MainPane"
+Path Line0002 = "l.h"
+File Type = "Include"
+Disk Date = 3552597832
 In Projects = "1,"
-Window Top = 64
-Window Left = 26
-Window Height = 531
-Window Width = 855
-Window Z-Order = 2
+Window Top = 219
+Window Left = 106
+Window Z-Order = 5
+Source Window State = "1,75,75,75,9,27,27,0,0,80,0,0,0,0,0,25,42,0,67,31,531,855,1,0,"
 
-[File 0007]
-Path Line0001 = "/e/工作/南京博泰检测/导通电阻测试/导通电阻测试软件/ResEvaluationSystem0729/AutoT"
-Path Line0002 = "est.c"
+[File 0005]
+Path Line0001 = "/e/工作/broadtest/导通电阻测试/导通电阻测试软件/ResEvaluationSystem0729/AutoTest"
+Path Line0002 = ".c"
 File Type = "CSource"
-Disk Date = 3552619695
+Disk Date = 3552449740
 In Projects = "1,"
 Window Top = 188
 Window Left = 90
-Source Window State = "1,213,213,213,16,20,20,0,3,0,0,0,0,0,0,0,105,0,213,16,491,855,1,14,"
+Window Z-Order = 9
+Source Window State = "1,132,132,132,92,93,93,0,0,80,0,0,0,0,0,23,251,0,255,41,491,855,1,14,"
+
+[File 0006]
+Path Line0001 = "/e/工作/broadtest/导通电阻测试/导通电阻测试软件/ResEvaluationSystem0729/MacroDef"
+Path Line0002 = "ine.h"
+File Type = "Include"
+Disk Date = 3552597771
+In Projects = "1,"
+Window Top = 95
+Window Left = 42
+Window Z-Order = 7
+Source Window State = "1,6,6,6,11,21,21,0,0,80,0,0,0,0,0,23,0,0,14,0,491,855,1,0,"
+
+[File 0007]
+Path = "/e/工作/broadtest/导通电阻测试/导通电阻测试软件/ResEvaluationSystem0729/FileIO.c"
+File Type = "CSource"
+Disk Date = 3552597748
+In Projects = "1,"
+Window Top = 33
+Window Left = 10
+Window Z-Order = 6
+Source Window State = "1,752,752,752,17,23,23,0,0,80,0,158,0,158,0,23,807,0,837,18,491,855,1,0,"
 
 [File 0008]
-Path Line0001 = "/e/工作/南京博泰检测/导通电阻测试/导通电阻测试软件/ResEvaluationSystem0729/DataB"
-Path Line0002 = "ase.c"
+Path Line0001 = "/e/工作/broadtest/导通电阻测试/导通电阻测试软件/ResEvaluationSystem0729/LoginPan"
+Path Line0002 = "el.h"
+File Type = "Include"
+Disk Date = 3552601459
+In Projects = "1,"
+Window Top = 64
+Window Left = 26
+Window Z-Order = 3
+Source Window State = "1,20,20,20,9,27,27,0,0,80,0,0,0,0,0,23,0,0,14,49,491,855,1,0,"
+
+[File 0009]
+Path Line0001 = "/e/工作/broadtest/导通电阻测试/导通电阻测试软件/ResEvaluationSystem0729/DataBase"
+Path Line0002 = ".c"
 File Type = "CSource"
 Disk Date = 3552515358
 In Projects = "1,"
 Window Top = 126
 Window Left = 58
-Source Window State = "1,23,23,23,14,16,16,0,0,0,0,7,0,7,0,0,22,0,49,34,451,855,1,0,"
-
-[File 0009]
-Path Line0001 = "/e/工作/南京博泰检测/导通电阻测试/导通电阻测试软件/ResEvaluationSystem0729/Login"
-Path Line0002 = "Panel.h"
-File Type = "Include"
-Disk Date = 3552617104
-In Projects = "1,"
-Window Top = 64
-Window Left = 26
-Source Window State = "1,20,20,20,9,27,27,0,0,0,0,0,0,0,0,0,0,0,14,49,491,855,1,0,"
+Window Z-Order = 8
+Source Window State = "1,23,23,23,14,16,16,0,0,80,0,7,0,7,0,21,22,0,49,34,451,855,1,0,"
 
 [File 0010]
-Path Line0001 = "/e/工作/南京博泰检测/导通电阻测试/导通电阻测试软件/ResEvaluationSystem0729/Imm32"
-Path Line0002 = ".Lib"
+Path Line0001 = "/e/工作/broadtest/导通电阻测试/导通电阻测试软件/ResEvaluationSystem0729/Imm32.Li"
+Path Line0002 = "b"
 File Type = "Library"
 Disk Date = 3273718816
 In Projects = "1,"
 
 [File 0011]
-Path Line0001 = "/e/工作/南京博泰检测/导通电阻测试/导通电阻测试软件/ResEvaluationSystem0729/odbcc"
-Path Line0002 = "p32.lib"
+Path Line0001 = "/e/工作/broadtest/导通电阻测试/导通电阻测试软件/ResEvaluationSystem0729/odbccp32"
+Path Line0002 = ".lib"
 File Type = "Library"
 Disk Date = 3273480660
 In Projects = "1,"
 
 [Tab Order]
-Tab 0001 Line0001 = "/e/工作/南京博泰检测/导通电阻测试/导通电阻测试软件/ResEvaluationSystem0729/MainP"
-Tab 0001 Line0002 = "anel.h"
-Tab 0002 Line0001 = "/e/工作/南京博泰检测/导通电阻测试/导通电阻测试软件/ResEvaluationSystem0729/Macro"
-Tab 0002 Line0002 = "Define.h"
-Tab 0003 Line0001 = "/e/工作/南京博泰检测/导通电阻测试/导通电阻测试软件/ResEvaluationSystem0729/Login"
-Tab 0003 Line0002 = "Panel.uir"
-Tab 0004 Line0001 = "/e/工作/南京博泰检测/导通电阻测试/导通电阻测试软件/ResEvaluationSystem0729/Main."
-Tab 0004 Line0002 = "c"
-Tab 0005 Line0001 = "/e/工作/南京博泰检测/导通电阻测试/导通电阻测试软件/ResEvaluationSystem0729/MainP"
-Tab 0005 Line0002 = "anel.uir"
-Tab 0006 Line0001 = "/e/工作/南京博泰检测/导通电阻测试/导通电阻测试软件/ResEvaluationSystem0729/FileI"
-Tab 0006 Line0002 = "O.c"
+Tab 0001 Line0001 = "/e/工作/broadtest/导通电阻测试/导通电阻测试软件/ResEvaluationSystem0729/MacroDef"
+Tab 0001 Line0002 = "ine.h"
+Tab 0002 Line0001 = "/e/工作/broadtest/导通电阻测试/导通电阻测试软件/ResEvaluationSystem0729/LoginPan"
+Tab 0002 Line0002 = "el.uir"
+Tab 0003 Line0001 = "/e/工作/broadtest/导通电阻测试/导通电阻测试软件/ResEvaluationSystem0729/MainPane"
+Tab 0003 Line0002 = "l.uir"
+Tab 0004 = "/e/工作/broadtest/导通电阻测试/导通电阻测试软件/ResEvaluationSystem0729/FileIO.c"
+Tab 0005 Line0001 = "/e/工作/broadtest/导通电阻测试/导通电阻测试软件/ResEvaluationSystem0729/AutoTest"
+Tab 0005 Line0002 = ".c"
+Tab 0006 = "/e/工作/broadtest/导通电阻测试/导通电阻测试软件/ResEvaluationSystem0729/Main.c"
+Tab 0007 Line0001 = "/e/工作/broadtest/导通电阻测试/导通电阻测试软件/ResEvaluationSystem0729/DataBase"
+Tab 0007 Line0002 = ".c"
+Tab 0008 Line0001 = "/e/工作/broadtest/导通电阻测试/导通电阻测试软件/ResEvaluationSystem0729/MainPane"
+Tab 0008 Line0002 = "l.h"
+Tab 0009 Line0001 = "/e/工作/broadtest/导通电阻测试/导通电阻测试软件/ResEvaluationSystem0729/LoginPan"
+Tab 0009 Line0002 = "el.h"
 
 [Default Build Config 0001 Debug]
 Generate Browse Info = True

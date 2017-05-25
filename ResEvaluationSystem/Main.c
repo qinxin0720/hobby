@@ -21,8 +21,6 @@ int main_panelHandle = -1;
 int setting_panelHandle = -1;
 int about_panelHandle = -1;
 
-int menuBarHandle = -1;
-
 int CreatDatabase (void);
 
 int main (int argc, char *argv[])
@@ -82,14 +80,9 @@ int CVICALLBACK login (int panel, int control, int event,
 				CreatDatabase ();
 			
 				SetCtrlVal (main_panelHandle, MAIN_PANEL_TEXTMSG, "Single Test");
-				
-				menuBarHandle = GetPanelMenuBar (main_panelHandle);
-				
-				SetMenuBarAttribute (menuBarHandle, MENUBAR_TEST_SINGLE_TEST, ATTR_CHECKED, 1); 
-				SetMenuBarAttribute (menuBarHandle, MENUBAR_TEST_LOOP_TEST, ATTR_CHECKED, 0);
 			
-				DisplayPanel (main_panelHandle);
 				DiscardPanel (login_panelHandle);
+				DisplayPanel (main_panelHandle);
 			}
 			else
 			{
@@ -168,8 +161,6 @@ void SetNewRowAttribute (int RowNum)
 		sprintf (pair, "%02d-%02d", i, i+20);
 		InsertTableCellRingItem (main_panelHandle, MAIN_PANEL_TABLE, MakePoint (2, RowNum), i-1, pair);
 	}
-	
-	SetTableCellVal (main_panelHandle, MAIN_PANEL_TABLE, MakePoint (3, RowNum), "101");
 	
 	SetTableCellAttribute (main_panelHandle, MAIN_PANEL_TABLE, MakePoint (4, RowNum), ATTR_TEXT_BGCOLOR, MakeColor (55, 0, 55)); 
 	SetTableCellAttribute (main_panelHandle, MAIN_PANEL_TABLE, MakePoint (4, RowNum), ATTR_TEXT_COLOR, MakeColor (255, 255, 255));

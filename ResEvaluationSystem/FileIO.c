@@ -738,17 +738,10 @@ int CVICALLBACK fileIO (int panel, int control, int event,
 					}
 					break;
 				case MAIN_PANEL_OPEN:
-					if (testStatus == 0)
+					GetProjectDir (defaultDir);
+					if (FileSelectPopupEx (defaultDir, "*.d", "*.d", "Please select a file!", VAL_SELECT_BUTTON, 0, 0, pathName) > 0)
 					{
-						GetProjectDir (defaultDir);
-						if (FileSelectPopupEx (defaultDir, "*.d", "*.d", "Please select a file!", VAL_SELECT_BUTTON, 0, 0, pathName) > 0)
-						{
-							openFile (pathName);
-						}
-					}
-					else
-					{
-						MessagePopup ("Warning", "Testing tasks in progress!");
+						openFile (pathName);
 					}
 					break;
 			}
@@ -779,36 +772,22 @@ void CVICALLBACK menuCB (int menuBar, int menuItem, void *callbackData,
 			fileIO (0, MAIN_PANEL_SAVE, EVENT_COMMIT, NULL, 0, 0);
 			break;
 		case MENUBAR_FILE_EDIT:
-			if (testStatus == 0)
+			edit_mode = 1;
+			SetCtrlAttribute (main_panelHandle, MAIN_PANEL_MOVEUP, ATTR_VISIBLE, 1);
+			SetCtrlAttribute (main_panelHandle, MAIN_PANEL_MOVEDOWN, ATTR_VISIBLE, 1); 
+			SetCtrlAttribute (main_panelHandle, MAIN_PANEL_DELETE, ATTR_VISIBLE, 1); 
+			SetCtrlAttribute (main_panelHandle, MAIN_PANEL_ADD, ATTR_VISIBLE, 1); 
+			SetCtrlAttribute (main_panelHandle, MAIN_PANEL_CLEAR, ATTR_VISIBLE, 1); 
+			SetCtrlAttribute (main_panelHandle, MAIN_PANEL_QUIT_EDITMODE, ATTR_VISIBLE, 1);
+			GetNumTableRows (main_panelHandle, MAIN_PANEL_TABLE, &numberOfRows);
+			if (numberOfRows > 0)
 			{
-				edit_mode = 1;
-				SetCtrlAttribute (main_panelHandle, MAIN_PANEL_MOVEUP, ATTR_VISIBLE, 1);
-				SetCtrlAttribute (main_panelHandle, MAIN_PANEL_MOVEDOWN, ATTR_VISIBLE, 1); 
-				SetCtrlAttribute (main_panelHandle, MAIN_PANEL_DELETE, ATTR_VISIBLE, 1); 
-				SetCtrlAttribute (main_panelHandle, MAIN_PANEL_ADD, ATTR_VISIBLE, 1); 
-				SetCtrlAttribute (main_panelHandle, MAIN_PANEL_CLEAR, ATTR_VISIBLE, 1); 
-				SetCtrlAttribute (main_panelHandle, MAIN_PANEL_QUIT_EDITMODE, ATTR_VISIBLE, 1);
-				GetNumTableRows (main_panelHandle, MAIN_PANEL_TABLE, &numberOfRows);
-				if (numberOfRows > 0)
-				{
-					SetTableCellRangeAttribute (main_panelHandle, MAIN_PANEL_TABLE, MakeRect (1, 1, numberOfRows, 2), ATTR_CELL_MODE, VAL_HOT);
-					SetTableCellRangeAttribute (main_panelHandle, MAIN_PANEL_TABLE, MakeRect (1, 5, numberOfRows, 6), ATTR_CELL_MODE, VAL_HOT);
-				}
-			}
-			else
-			{
-				MessagePopup ("Warning", "Testing tasks in progress!"); 
+				SetTableCellRangeAttribute (main_panelHandle, MAIN_PANEL_TABLE, MakeRect (1, 1, numberOfRows, 2), ATTR_CELL_MODE, VAL_HOT);
+				SetTableCellRangeAttribute (main_panelHandle, MAIN_PANEL_TABLE, MakeRect (1, 5, numberOfRows, 6), ATTR_CELL_MODE, VAL_HOT);
 			}
 			break;
 		case MENUBAR_SETTING_SET_GPIB_ADDRESS:
-			if (testStatus == 0)
-			{
-				InstallPopup (setting_panelHandle);
-			}
-			else
-			{
-				MessagePopup ("Warning", "Testing tasks in progress!");
-			}
+			InstallPopup (setting_panelHandle);
 			break;
 		case MENUBAR_FILE_QUIT:
 			quit (0, 0, EVENT_COMMIT, NULL, 0, 0);
@@ -825,8 +804,6 @@ void CVICALLBACK menuCB (int menuBar, int menuItem, void *callbackData,
 				loopValue = 1;
 				SetCtrlVal (main_panelHandle, MAIN_PANEL_TEXTMSG, "Single Test"); 
 				SetCtrlVal (main_panelHandle, MAIN_PANEL_TEXTMSG_2, "0/1"); 
-				SetMenuBarAttribute (menuBarHandle, MENUBAR_TEST_SINGLE_TEST, ATTR_CHECKED, 1); 
-				SetMenuBarAttribute (menuBarHandle, MENUBAR_TEST_LOOP_TEST, ATTR_CHECKED, 0);
 			}
 			else
 			{
@@ -843,16 +820,12 @@ void CVICALLBACK menuCB (int menuBar, int menuItem, void *callbackData,
 					SetCtrlVal (main_panelHandle, MAIN_PANEL_TEXTMSG, "Loop Test");
 					sprintf (responseBuffer, "0/%d", loopValue);
 					SetCtrlVal (main_panelHandle, MAIN_PANEL_TEXTMSG_2, responseBuffer); 
-					SetMenuBarAttribute (menuBarHandle, MENUBAR_TEST_SINGLE_TEST, ATTR_CHECKED, 0); 
-					SetMenuBarAttribute (menuBarHandle, MENUBAR_TEST_LOOP_TEST, ATTR_CHECKED, 1);
 				}
 				else
 				{
 					loopValue = 1;
 					SetCtrlVal (main_panelHandle, MAIN_PANEL_TEXTMSG, "Single Test"); 
 					SetCtrlVal (main_panelHandle, MAIN_PANEL_TEXTMSG_2, "0/1");
-					SetMenuBarAttribute (menuBarHandle, MENUBAR_TEST_SINGLE_TEST, ATTR_CHECKED, 1); 
-					SetMenuBarAttribute (menuBarHandle, MENUBAR_TEST_LOOP_TEST, ATTR_CHECKED, 0);
 				}
 			}
 			else

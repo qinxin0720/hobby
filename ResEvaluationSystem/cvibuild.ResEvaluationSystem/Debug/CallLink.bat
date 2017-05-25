@@ -1,8 +1,9 @@
-cvi.lib
-cvirte.dll
-Imm32.Lib
-IMM32.dll
-kernel32.lib
-KERNEL32.dll
-user32.lib
-USER32.dll
+@"d:\program files (x86)\national instruments\cvi2015\bin\cvilink.exe" -cmd:link_options.txt -flags:0 -expiry:0 > Link.out 2>&1
+@if errorlevel 1 goto err
+@echo Link success
+@echo Link complete
+@exit 0
+:err
+@echo Link complete
+@echo Link failed
+@exit 1

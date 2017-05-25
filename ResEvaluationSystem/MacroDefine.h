@@ -5,8 +5,6 @@ extern int main_panelHandle;
 extern int setting_panelHandle;
 extern int about_panelHandle;
 
-extern int menuBarHandle;
-
 
 extern int edit_mode;
 extern int testStatus;
