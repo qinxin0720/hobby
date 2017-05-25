@@ -1,4 +1,0 @@
-[SaveData]
-Class="Function"
-Prototype="int SaveData(int row);"
-
