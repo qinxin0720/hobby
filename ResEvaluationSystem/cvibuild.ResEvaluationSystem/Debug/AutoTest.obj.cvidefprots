@@ -1,0 +1,62 @@
+HDRS = 	"d:\\program files (x86)\\national instruments\\cvi2015\\toolslib\\activex\\word"
+	"d:\\program files (x86)\\national instruments\\cvi2015\\toolslib\\activex\\excel"
+	"d:\\program files (x86)\\national instruments\\cvi2015\\toolslib\\custctrl"
+	"d:\\program files (x86)\\national instruments\\cvi2015\\toolslib\\custctrl\\custsupp"
+	"d:\\program files (x86)\\national instruments\\cvi2015\\toolslib\\cvirtsup"
+	"d:\\program files (x86)\\national instruments\\cvi2015\\toolslib\\datasock"
+	"d:\\program files (x86)\\national instruments\\cvi2015\\toolslib\\daqUtil"
+	"d:\\program files (x86)\\national instruments\\cvi2015\\toolslib\\printing"
+	"d:\\program files (x86)\\national instruments\\cvi2015\\toolslib\\toolbox"
+	"d:\\program files (x86)\\national instruments\\cvi2015\\toolslib\\reportgen"
+	"d:\\program files (x86)\\national instruments\\cvi2015\\toolslib\\localui"
+	"d:\\program files (x86)\\national instruments\\cvi2015\\instr"
+	"D:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\toolslib\\custctrl"
+	"D:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\toolslib\\custctrl\\custsupp"
+	"D:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\instr"
+	"C:\\ProgramData\\National Instruments\\CVI2015\\instr"
+	"d:\\program files (x86)\\national instruments\\cvi2015\\include"
+	"D:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\include"
+	"C:\\ProgramData\\National Instruments\\CVI2015\\include"
+	"C:\\ProgramData\\National Instruments\\CVI\\include"
+	"d:\\program files (x86)\\national instruments\\cvi2015\\include\\ansi"
+	"d:\\program files (x86)\\national instruments\\cvi2015\\include\\clang\\3.3"
+	"C:\\Program Files (x86)\\IVI Foundation\\IVI\\Include"
+	"C:\\Program Files (x86)\\IVI Foundation\\VISA\\winnt\\include"
+	"D:\\Program Files (x86)\\National Instruments\\Shared\\MSDTRedistributables\\SDKHeaderFiles\\8.1"
+	"d:\\Program Files (x86)\\National Instruments\\CVI2015\\bin"
+	"c:\\ProgramData\\National Instruments\\CVI2015\\bin"
+	"d:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\Bin"
+	;
+include Jamfile_instr ;
+LOCATE on "AutoTest.c" = "e:\\工作\\broadtest\\导通电阻测试\\导通电阻测试软件\\ResEvaluationSystem0729" ;
+LOCATE on "DataBase.c" = "e:\\工作\\broadtest\\导通电阻测试\\导通电阻测试软件\\ResEvaluationSystem0729" ;
+LOCATE on "FileIO.c" = "e:\\工作\\broadtest\\导通电阻测试\\导通电阻测试软件\\ResEvaluationSystem0729" ;
+LOCATE on "LoginPanel.h" = "e:\\工作\\broadtest\\导通电阻测试\\导通电阻测试软件\\ResEvaluationSystem0729" ;
+LOCATE on "MacroDefine.h" = "e:\\工作\\broadtest\\导通电阻测试\\导通电阻测试软件\\ResEvaluationSystem0729" ;
+LOCATE on "Main.c" = "e:\\工作\\broadtest\\导通电阻测试\\导通电阻测试软件\\ResEvaluationSystem0729" ;
+LOCATE on "MainPanel.h" = "e:\\工作\\broadtest\\导通电阻测试\\导通电阻测试软件\\ResEvaluationSystem0729" ;
+Object "e:\\工作\\broadtest\\导通电阻测试\\导通电阻测试软件\\ResEvaluationSystem0729\\cvibuild.ResEvaluationSystem\\Release\\AutoTest.obj" : "e:\\工作\\broadtest\\导通电阻测试\\导通电阻测试软件\\ResEvaluationSystem0729\\AutoTest.c" ;
+FILENUM on "e:\\工作\\broadtest\\导通电阻测试\\导通电阻测试软件\\ResEvaluationSystem0729\\cvibuild.ResEvaluationSystem\\Release\\AutoTest.obj" = 1 ;
+DEFPROTS on "e:\\工作\\broadtest\\导通电阻测试\\导通电阻测试软件\\ResEvaluationSystem0729\\cvibuild.ResEvaluationSystem\\Release\\AutoTest.obj" = "e:\\工作\\broadtest\\导通电阻测试\\导通电阻测试软件\\ResEvaluationSystem0729\\cvibuild.ResEvaluationSystem\\Release\\AutoTest.obj.cvidefprots" ;
+OUTFILE on "e:\\工作\\broadtest\\导通电阻测试\\导通电阻测试软件\\ResEvaluationSystem0729\\cvibuild.ResEvaluationSystem\\Release\\AutoTest.obj" = "e:\\工作\\broadtest\\导通电阻测试\\导通电阻测试软件\\ResEvaluationSystem0729\\cvibuild.ResEvaluationSystem\\Release\\AutoTest.obj.out" ;
+PrjObjects += "e:\\工作\\broadtest\\导通电阻测试\\导通电阻测试软件\\ResEvaluationSystem0729\\cvibuild.ResEvaluationSystem\\Release\\AutoTest.obj" ;
+Object "e:\\工作\\broadtest\\导通电阻测试\\导通电阻测试软件\\ResEvaluationSystem0729\\cvibuild.ResEvaluationSystem\\Release\\DataBase.obj" : "e:\\工作\\broadtest\\导通电阻测试\\导通电阻测试软件\\ResEvaluationSystem0729\\DataBase.c" ;
+FILENUM on "e:\\工作\\broadtest\\导通电阻测试\\导通电阻测试软件\\ResEvaluationSystem0729\\cvibuild.ResEvaluationSystem\\Release\\DataBase.obj" = 2 ;
+DEFPROTS on "e:\\工作\\broadtest\\导通电阻测试\\导通电阻测试软件\\ResEvaluationSystem0729\\cvibuild.ResEvaluationSystem\\Release\\DataBase.obj" = "e:\\工作\\broadtest\\导通电阻测试\\导通电阻测试软件\\ResEvaluationSystem0729\\cvibuild.ResEvaluationSystem\\Release\\DataBase.obj.cvidefprots" ;
+OUTFILE on "e:\\工作\\broadtest\\导通电阻测试\\导通电阻测试软件\\ResEvaluationSystem0729\\cvibuild.ResEvaluationSystem\\Release\\DataBase.obj" = "e:\\工作\\broadtest\\导通电阻测试\\导通电阻测试软件\\ResEvaluationSystem0729\\cvibuild.ResEvaluationSystem\\Release\\DataBase.obj.out" ;
+PrjObjects += "e:\\工作\\broadtest\\导通电阻测试\\导通电阻测试软件\\ResEvaluationSystem0729\\cvibuild.ResEvaluationSystem\\Release\\DataBase.obj" ;
+Object "e:\\工作\\broadtest\\导通电阻测试\\导通电阻测试软件\\ResEvaluationSystem0729\\cvibuild.ResEvaluationSystem\\Release\\FileIO.obj" : "e:\\工作\\broadtest\\导通电阻测试\\导通电阻测试软件\\ResEvaluationSystem0729\\FileIO.c" ;
+FILENUM on "e:\\工作\\broadtest\\导通电阻测试\\导通电阻测试软件\\ResEvaluationSystem0729\\cvibuild.ResEvaluationSystem\\Release\\FileIO.obj" = 3 ;
+DEFPROTS on "e:\\工作\\broadtest\\导通电阻测试\\导通电阻测试软件\\ResEvaluationSystem0729\\cvibuild.ResEvaluationSystem\\Release\\FileIO.obj" = "e:\\工作\\broadtest\\导通电阻测试\\导通电阻测试软件\\ResEvaluationSystem0729\\cvibuild.ResEvaluationSystem\\Release\\FileIO.obj.cvidefprots" ;
+OUTFILE on "e:\\工作\\broadtest\\导通电阻测试\\导通电阻测试软件\\ResEvaluationSystem0729\\cvibuild.ResEvaluationSystem\\Release\\FileIO.obj" = "e:\\工作\\broadtest\\导通电阻测试\\导通电阻测试软件\\ResEvaluationSystem0729\\cvibuild.ResEvaluationSystem\\Release\\FileIO.obj.out" ;
+PrjObjects += "e:\\工作\\broadtest\\导通电阻测试\\导通电阻测试软件\\ResEvaluationSystem0729\\cvibuild.ResEvaluationSystem\\Release\\FileIO.obj" ;
+Object "e:\\工作\\broadtest\\导通电阻测试\\导通电阻测试软件\\ResEvaluationSystem0729\\cvibuild.ResEvaluationSystem\\Release\\Main.obj" : "e:\\工作\\broadtest\\导通电阻测试\\导通电阻测试软件\\ResEvaluationSystem0729\\Main.c" ;
+FILENUM on "e:\\工作\\broadtest\\导通电阻测试\\导通电阻测试软件\\ResEvaluationSystem0729\\cvibuild.ResEvaluationSystem\\Release\\Main.obj" = 4 ;
+DEFPROTS on "e:\\工作\\broadtest\\导通电阻测试\\导通电阻测试软件\\ResEvaluationSystem0729\\cvibuild.ResEvaluationSystem\\Release\\Main.obj" = "e:\\工作\\broadtest\\导通电阻测试\\导通电阻测试软件\\ResEvaluationSystem0729\\cvibuild.ResEvaluationSystem\\Release\\Main.obj.cvidefprots" ;
+OUTFILE on "e:\\工作\\broadtest\\导通电阻测试\\导通电阻测试软件\\ResEvaluationSystem0729\\cvibuild.ResEvaluationSystem\\Release\\Main.obj" = "e:\\工作\\broadtest\\导通电阻测试\\导通电阻测试软件\\ResEvaluationSystem0729\\cvibuild.ResEvaluationSystem\\Release\\Main.obj.out" ;
+PrjObjects += "e:\\工作\\broadtest\\导通电阻测试\\导通电阻测试软件\\ResEvaluationSystem0729\\cvibuild.ResEvaluationSystem\\Release\\Main.obj" ;
+Object "e:\\工作\\broadtest\\导通电阻测试\\导通电阻测试软件\\ResEvaluationSystem0729\\cvibuild.ResEvaluationSystem\\Release\\resources.res" : "e:\\工作\\broadtest\\导通电阻测试\\导通电阻测试软件\\ResEvaluationSystem0729\\cvibuild.ResEvaluationSystem\\Release\\resources.in.rc" ;
+MainFromObjects "e:\\工作\\broadtest\\导通电阻测试\\导通电阻测试软件\\ResEvaluationSystem0729\\cvibuild.ResEvaluationSystem\\Release\\ResEvaluationSystem.exe" : $(PrjObjects) $(InstrObjects) ;
+Depends "e:\\工作\\broadtest\\导通电阻测试\\导通电阻测试软件\\ResEvaluationSystem0729\\cvibuild.ResEvaluationSystem\\Release\\ResEvaluationSystem.exe" : "e:\\工作\\broadtest\\导通电阻测试\\导通电阻测试软件\\ResEvaluationSystem0729\\cvibuild.ResEvaluationSystem\\Release\\link_options.txt" ;
+Depends "e:\\工作\\broadtest\\导通电阻测试\\导通电阻测试软件\\ResEvaluationSystem0729\\cvibuild.ResEvaluationSystem\\Release\\ResEvaluationSystem.exe" : "e:\\工作\\broadtest\\导通电阻测试\\导通电阻测试软件\\ResEvaluationSystem0729\\cvibuild.ResEvaluationSystem\\Release\\resources.res" ;
+Depends all : "e:\\工作\\broadtest\\导通电阻测试\\导通电阻测试软件\\ResEvaluationSystem0729\\cvibuild.ResEvaluationSystem\\Release\\ResEvaluationSystem.exe" ;
