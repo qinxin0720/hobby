@@ -1,0 +1,28 @@
+[reset]
+Class="Function"
+Prototype="int reset();"
+
+[set4wireresmode]
+Class="Function"
+Prototype="int set4wireresmode();"
+
+[closechannel]
+Class="Function"
+Prototype="int closechannel(int ChannelNum);"
+
+[fetch]
+Class="Function"
+Prototype="double fetch();"
+
+[StartTestThreadFunction]
+Class="Function"
+Prototype="int StartTestThreadFunction(void *functionData);"
+
+[test]
+Class="Function"
+Prototype="int test(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[ClearResult]
+Class="Function"
+Prototype="void ClearResult();"
+

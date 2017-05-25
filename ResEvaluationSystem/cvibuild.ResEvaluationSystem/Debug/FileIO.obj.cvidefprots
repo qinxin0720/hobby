@@ -1,0 +1,36 @@
+[mystrncpy]
+Class="Function"
+Prototype="int mystrncpy(char *outputString, const int outputStringlen, const char *inputString, const char symbol);"
+
+[openConfigFile]
+Class="Function"
+Prototype="void openConfigFile();"
+
+[saveConfigFile]
+Class="Function"
+Prototype="void saveConfigFile();"
+
+[SetRangeRowAttribute]
+Class="Function"
+Prototype="void SetRangeRowAttribute(int TotalRow);"
+
+[saveFileThreadFunction]
+Class="Function"
+Prototype="int saveFileThreadFunction(void *functionData);"
+
+[openFile]
+Class="Function"
+Prototype="int openFile(char *fileName);"
+
+[fileIO]
+Class="Function"
+Prototype="int fileIO(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[menuCB]
+Class="Function"
+Prototype="void menuCB(int menuBar, int menuItem, void *callbackData, int panel);"
+
+[SaveConfig]
+Class="Function"
+Prototype="int SaveConfig(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
